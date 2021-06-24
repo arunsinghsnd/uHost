@@ -24,3 +24,13 @@ body {
 .section-title {
   color: #2ddf5c;
 }
+
+.main-header {
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
