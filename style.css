@@ -28,6 +28,45 @@ body {
   vertical-align: middle;
 }
 
+.plan--highlight {
+  background: #19b84c;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+  background: #fff;
+  color: #19b84c;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+}
+
+.plan--highlight .plan__title {
+  color: #fff;
+}
+
+.plan--highlight .plan__price {
+  color: #0e4f1f;
+}
+
+.plan__feature {
+  margin: 8px 0;
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
