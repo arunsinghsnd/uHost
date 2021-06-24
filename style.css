@@ -5,13 +5,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-/* #product-overview {
-  background: #ff1b68;
-  padding: 20px;
-  border: 5px solid #000;
-  text-align: center;
-  margin: 20px;
-} */
+
 #product-overview {
   background: #ff1b68;
   width: 100%;
@@ -61,4 +55,9 @@ body {
 
 .main-nav__item {
   display: inline-block;
+  margin: 0px 16px;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
 }
