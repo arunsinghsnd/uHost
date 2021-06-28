@@ -1,5 +1,6 @@
 var backdrop = document.querySelector(".backdrop");
 var modal = document.querySelector(".modal");
+var modalNoButton = document.querySelector(".modal__action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
@@ -9,8 +10,11 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
   });
 }
 
-// console.dir(selectPlanButtons);
+backdrop.addEventListener("click", closeModal);
 
-// console.dir(backdrop);
+modalNoButton.addEventListener("click", closeModal);
 
-//backdrop.style.display = "block";
+function closeModal() {
+  backrop.style.display = "none";
+  modal.style.display = "none";
+}
