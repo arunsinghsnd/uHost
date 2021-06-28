@@ -7,24 +7,33 @@ var mabileNav = document.querySelector(".mobile-nav");
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", function () {
-    modal.style.display = "block";
-    backdrop.style.display = "block";
+    // modal.style.display = "block";
+    // backdrop.style.display = "block";
+    // modal.className = 'open'; this will actually overwitem
+    modal.classList.add("open");
+    backdrop.classList.add("open");
   });
 }
 
 backdrop.addEventListener("click", function () {
-  mabileNav.style.display = "none";
+  // mabileNav.style.display = "none";
+  mabileNav.classList.remove("open");
+
   closeModal();
 });
 
 modalNoButton.addEventListener("click", closeModal);
 
 function closeModal() {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  // backdrop.style.display = "none";
+  // modal.style.display = "none";
+  modal.classList.remove("open");
+  backdrop.classList.remove("open");
 }
 
 toggleButton.addEventListener("click", function () {
-  mabileNav.style.display = "block";
-  backdrop.style.display = "block";
+  // mabileNav.style.display = "block";
+  // backdrop.style.display = "block";
+  mabileNav.classList.add("open");
+  backdrop.classList.add("open");
 });
